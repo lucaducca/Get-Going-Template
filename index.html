@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="inputs.js"></script>
+    <link id="favicon" rel="icon" href="">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: black;
+            background-color: white;
+            height: 100vh;
+        }
+
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #brand p {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        #social-media {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .main-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            gap: 40px;
+        }
+
+        #content {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 54px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        #features {
+            width: 350px;
+        }
+
+        .form-container {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .form-container:last-child {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .x-icon { color: #000000; }
+        .facebook { color: #4267B2; }
+        .linkedin { color: #0077b5; }
+        .instagram { color: #E1306C; }
+        .youtube { color: #FF0000; }
+        .tiktok { color: #000000; }
+        .discord { color: #5865F2; }
+        .mail { color: #000000; }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #social-media {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            #socialMediaCallToAction {
+                margin: 0;
+            }
+
+            main {
+                justify-content: flex-start;
+                margin-top: 20px;
+            }
+
+            .main-wrapper {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0px;
+            }
+
+            #content, #features {
+                width: 100%;
+            }
+
+            #content {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 26px;
+                text-align: center;
+            }
+
+            .footer {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-wrapper {
+                gap: 0px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="brand">
+                <img id="logoFileName" alt="logo" height="44" width="auto" style="display: none;">
+                <p id="companyName"></p>
+            </div>
+            <div id="social-media">
+                <p id="socialMediaCallToAction"></p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="facebook" id="facebookIcon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="instagram" id="instagramIcon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="x-icon" id="xIcon">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="linkedin" id="linkedinIcon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="youtube" id="youtubeIcon">
+                        <i class="fa-brands fa-youtube fa-sm"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="tiktok" id="tiktokIcon">
+                        <i class="fa-brands fa-tiktok fa-sm"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="discord" id="discordIcon">
+                        <i class="fa-brands fa-discord fa-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrapper">
+                <div id="content">
+                    <h1 id="headerText"></h1>
+                    <h2 id="descriptionText"></h2>
+                </div>
+                <div id="features">
+                    <div id="form-container-1" class="form-container">
+                        <h3 id="waitlistCallToAction"></h3>
+                        <div id="waitlistFormScriptContainer"></div>
+                    </div>
+                    <div id="form-container-2" class="form-container">
+                        <h3 id="meetingCallToAction"></h3>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="button" id="calendlyLink"><span id="meetingButtonText"></span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="mail" id="emailLink">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+            <p id="emailText">Email: </p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('pageTitle').textContent = companyName;
+        
+        if (logoFileName && logoFileName.trim() !== "") {
+            const faviconLink = document.getElementById('favicon');
+            faviconLink.href = `./${logoFileName}?`;
+            const logoImg = document.getElementById('logoFileName');
+            logoImg.src = `./${logoFileName}`;
+            logoImg.style.display = 'inline-block';
+        }
+        
+        document.getElementById('companyName').textContent = companyName;
+        document.querySelector('#companyName').style.color = companyNameColor;
+        document.querySelector('body').style.backgroundColor = pageBackgroundColor;
+        document.querySelector('body').style.color = pageTextColor;
+        
+        document.getElementById('socialMediaCallToAction').textContent = socialMediaCallToAction;
+    
+        function handleSocialIcon(id, link, color) {
+            const icon = document.getElementById(id);
+            if (link && link.trim() !== "") {
+                icon.href = link;
+                icon.style.display = 'inline-block';
+                icon.style.color = color;
+            } else {
+                icon.style.display = 'none';
+            }
+        }
+    
+        handleSocialIcon('facebookIcon', facebookLink, facebookLogoColor);
+        handleSocialIcon('instagramIcon', instagramLink, instagramLogoColor);
+        handleSocialIcon('xIcon', xLink, xLogoColor);
+        handleSocialIcon('linkedinIcon', linkedinLink, linkedinLogoColor);
+        handleSocialIcon('youtubeIcon', youtubeLink, youtubeLogoColor);
+        handleSocialIcon('tiktokIcon', tiktokLink, tiktokLogoColor);
+        handleSocialIcon('discordIcon', discordLink, discordLogoColor);
+    
+        if (!facebookLink && !instagramLink && !xLink && !linkedinLink && !youtubeLink && !tiktokLink && !discordLink) {
+            document.getElementById('socialMediaCallToAction').style.display = 'none';
+        }
+    
+        document.getElementById('headerText').textContent = headerText;
+        document.getElementById('descriptionText').textContent = descriptionText;
+    
+        document.getElementById('waitlistCallToAction').textContent = waitlistCallToAction;
+
+
+        if (emailOctopusScript && emailOctopusScript.trim() !== "") {
+            const waitlistFormScriptContainer = document.getElementById('waitlistFormScriptContainer');
+            const scriptElement = document.createElement('script');
+            scriptElement.src = waitlistFormScriptSrc;
+            scriptElement.dataset.form = waitlistFormScriptDataForm;
+            scriptElement.async = true;
+            waitlistFormScriptContainer.appendChild(scriptElement);
+        } else {
+            document.getElementById('form-container-1').style.display = 'none';
+        }
+        
+        if (calendlyLink && calendlyLink.trim() !== "") {
+            document.getElementById('meetingCallToAction').textContent = meetingCallToAction;
+            document.getElementById('meetingButtonText').textContent = meetingButtonText;
+            document.getElementById('calendlyLink').href = calendlyLink;
+            document.querySelector('.button').style.backgroundColor = buttonBackgroundColor;
+            document.querySelector('.button').style.color = buttonTextColor;
+            document.getElementById('form-container-2').style.display = 'block';
+        } else {
+            document.getElementById('form-container-2').style.display = 'none';
+        }
+    
+        document.getElementById('form-container-1').style.backgroundColor = formWrapperColor;
+        if (document.getElementById('form-container-2').style.display !== 'none') {
+            document.getElementById('form-container-2').style.backgroundColor = formWrapperColor;
+        }
+    
+        if (contactEmail && contactEmail.trim() !== '') {
+            document.querySelector('.mail').style.color = pageTextColor;
+            document.getElementById('emailLink').href = `mailto:${contactEmail}`;
+            document.getElementById('emailText').textContent = `Email: ${contactEmail}`;    
+        } else {
+            document.querySelector('.footer').style.display = 'none';
+        }
+
+        
+    </script>
+</body>
+</html>
