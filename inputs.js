@@ -1,46 +1,46 @@
 /* 
-Section 5: Making the website work
-- Add your calendly link between the quotation marks '' below
+Step 7: Connecting EmailOctopus and Calendly to your website
+- Add your EmailOctopus and Calendly links between the quotation marks '' below
 */
 const emailOctopusScript = '<script async src="https://eocampaign1.com/form/dc180a9e-4040-11ef-be95-d31e7313d676.js" data-form="dc180a9e-4040-11ef-be95-d31e7313d676"></script>'
 const calendlyLink = 'https://calendly.com'
 
 /*
-Section 6: Branding and color
+Step 8: Website Content and Branding
 - Here we will outline how we want the website to look like
-- To do this we will mainly be using hex codes which we discussed in section 2  
-- Below you can see the hex codes for the colors white and black
+- To do this we will be using HEX codes which we discussed in Step 4  
+- Below you can see the HEX codes for the colors white and black
 
-White hex color code: #FFFFFF
-Black hex color code: #000000
+White HEX color code: #FFFFFF
+Black HEX color code: #000000
 */
 
 // HIGH PRIORITY CHANGES
-// Branding: Update with your company logo, name and colors
-const logoFileName = 'logo.png'
-
+// 2. Change project name and colours:
 const companyName = 'NOTFLIX'
 const companyNameColor = '#E50914'
 
-const buttonBackgroundColor = '#E50914' // Likely the same as your company name color
+const buttonBackgroundColor = '#E50914'
 const buttonTextColor = '#FFFFFF' // Make this either black (#000000) or white (#FFFFFF) depending on what is easiest to read on your button color of choice
 
-// Social media: Update with links to your social media accounts. Leave blank if not relevant
+// 3. Update social media links:
 const facebookLink = 'https://facebook.com'
 const instagramLink = 'https://instagram.com'
-const xLink = 'https://x.com'
+const xLink = 'https://x.com/lucaducca'
 const linkedinLink = 'https://linkedin.com'
 const youtubeLink = 'https://youtube.com'
 const tiktokLink = 'https://tiktok.com'
 const discordLink = 'https://discord.com'
 
-// Header and description: Update with your value statements
+// 4. Update header and description texts:
 const headerText = 'Unlimited films, TV programmes and more' // One-line description of what you will offer customers
 const descriptionText = 'Watch anywhere. Cancel at any time.' // More detailed description of what you will offer customers
 
-// Email address: Update with your own email address. Leave blank if not relevant
+// 5. Update contact email:
 const contactEmail = 'example@notflix.com'
 
+// 6. Replace the logo:
+const logoFileName = 'logo.png'
 
 
 // LOW PRIORITY CHANGES
