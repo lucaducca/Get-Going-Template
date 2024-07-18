@@ -6,7 +6,12 @@ const emailOctopusScript = '<script async src="https://eocampaign1.com/form/dc18
 const calendlyLink = 'https://calendly.com'
 
 /*
-Step 8: Website Content and Branding
+Step 8: Adding your logo
+*/
+const logoFileName = 'logo.png'
+
+/*
+Step 9: Website Content and Branding
 - Here we will outline how we want the website to look like
 - To do this we will be using HEX codes which we discussed in Step 4  
 - Below you can see the HEX codes for the colors white and black
@@ -38,10 +43,6 @@ const descriptionText = 'Watch anywhere. Cancel at any time.' // More detailed d
 
 // 5. Update contact email:
 const contactEmail = 'example@notflix.com'
-
-// 6. Replace the logo:
-const logoFileName = 'logo.png'
-
 
 // LOW PRIORITY CHANGES
 // Branding: Update with different background and text colors if needed
