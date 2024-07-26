@@ -75,6 +75,14 @@
             flex: 1;
         }
 
+        .center-content #content {
+            text-align: center;
+        }
+
+        .center-content #features {
+            display: none;
+        }
+
         h1 {
             font-size: 54px;
             margin-top: 0;
@@ -364,6 +372,9 @@
             document.querySelector('.footer').style.display = 'none';
         }
 
+        if (emailOctopusScript.trim() === '' && calendlyLink.trim() === '') {
+            document.body.classList.add('center-content');
+        }     
         
     </script>
 </body>
