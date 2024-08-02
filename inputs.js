@@ -56,6 +56,7 @@ const contactEmail = 'example@notflix.com'
 // Branding: Update with different background and text colors if needed
 const pageBackgroundColor = '#FFFFFF'
 const pageTextColor = '#000000'
+const formTextColor = '#000000'
 
 // Social media: Update the call to action with your own
 const socialMediaCallToAction = 'Find us on social media'

@@ -381,7 +381,8 @@
         document.getElementById('sub-head-em').style.fontSize = `${descriptionTextSize}px`;
 
         document.getElementById('waitlistCallToAction').textContent = waitlistCallToAction;
-
+        document.getElementById('waitlistCallToAction').style.color = formTextColor
+        document.getElementById('meetingCallToAction').style.color = formTextColor
 
         if (emailOctopusScript && emailOctopusScript.trim() !== "") {
             const waitlistFormScriptContainer = document.getElementById('waitlistFormScriptContainer');
