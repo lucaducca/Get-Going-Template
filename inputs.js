@@ -6,10 +6,17 @@ const emailOctopusScript = '<script async src="https://eocampaign1.com/form/dc18
 
 const calendlyLink = 'https://calendly.com/joebloggs619/30min'
 
+
+
+
 /*
 Step 8: Adding your logo
 */
 const logoFileName = 'logo.png'
+
+
+
+
 
 /*
 Step 9: Website Content and Branding
@@ -26,16 +33,16 @@ Black HEX color code: #000000
 const companyName = 'NOTFLIX'
 const companyNameColor = '#E50914'
 
-const buttonBackgroundColor = '#E50914'
-const buttonTextColor = '#FFFFFF' // Make this either black (#000000) or white (#FFFFFF) depending on what is easiest to read on your button color of choice
+const formButtonBackgroundColor = '#E50914'
+const formButtonTextColor = '#FFFFFF' // Make this either black (#000000) or white (#FFFFFF) depending on what is easiest to read on your button color of choice
 
 // 3. Update social media links:
 const facebookLink = 'https://facebook.com'
 const instagramLink = 'https://instagram.com'
 const xLink = 'https://x.com/lucaducca'
 const linkedinLink = 'https://linkedin.com'
-const youtubeLink = 'https://youtube.com'
-const tiktokLink = 'https://tiktok.com'
+const youtubeLink = 'https://www.youtube.com'
+const tiktokLink = 'https://www.tiktok.com'
 const discordLink = 'https://discord.com'
 
 // 4. Update header and description texts:
@@ -44,6 +51,9 @@ const descriptionText = 'Watch anywhere. Cancel at any time.' // More detailed d
 
 // 5. Update contact email:
 const contactEmail = 'example@notflix.com'
+
+
+
 
 // LOW PRIORITY CHANGES
 // Branding: Update with different background and text colors if needed
@@ -65,7 +75,7 @@ const meetingButtonText = 'Schedule a meeting'
 
 // LOWEST PRIORITY CHANGES (For special cases)
 // Forms: Change from white if it does not fit with your new background color
-const formWrapperColor = '#FFFFFF'
+const formBackgroundColor = '#FFFFFF'
 
 // Social media: Change the colors if they do not fit with your new background color
 const facebookLogoColor = '#4267B2'

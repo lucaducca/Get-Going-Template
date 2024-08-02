@@ -83,38 +83,41 @@
             display: none;
         }
 
+        #head-em {
+            font-size: 60px;
+        }
+
+        #sub-head-em {
+            font-size: 36px;
+        }
+
         h1 {
-            font-size: 54px;
+            font-size: 1em;
             margin-top: 0;
             margin-bottom: 10px;
         }
 
         h2 {
-            font-size: 30px;
+            font-size: 1em;
             font-weight: normal;
         }
 
         #features {
-            width: 350px;
+            width: 400px;
         }
 
-        .form-container {
-            background-color: white;
+        #form-container-1, #form-container-2 {
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .form-container:last-child {
-            margin-bottom: 10px;
         }
 
         h3 {
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             text-align: center;
+            font-size: 24px;
         }
 
         input[type="email"] {
@@ -161,6 +164,22 @@
         .tiktok { color: #000000; }
         .discord { color: #5865F2; }
         .mail { color: #000000; }
+
+        @media (max-width: 1100px) {
+            h1 {
+                font-size: 0.8em;
+            }
+
+            h2 {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 920px) {
+            #features {
+                width: 350px;
+            }
+        }
 
         @media (max-width: 768px) {
             header {
@@ -266,13 +285,19 @@
         <main>
             <div class="main-wrapper">
                 <div id="content">
-                    <h1 id="headerText"></h1>
-                    <h2 id="descriptionText"></h2>
+                    <div id="head-em">
+                        <h1 id="headerText"></h1>
+                    </div>
+                    <div id="sub-head-em">
+                        <h2 id="descriptionText"></h2>
+                    </div>
                 </div>
                 <div id="features">
                     <div id="form-container-1" class="form-container">
                         <h3 id="waitlistCallToAction"></h3>
-                        <div id="waitlistFormScriptContainer"></div>
+                        <div id="script">
+                            <div id="waitlistFormScriptContainer"></div>
+                        </div>
                     </div>
                     <div id="form-container-2" class="form-container">
                         <h3 id="meetingCallToAction"></h3>
@@ -352,16 +377,16 @@
             document.getElementById('meetingCallToAction').textContent = meetingCallToAction;
             document.getElementById('meetingButtonText').textContent = meetingButtonText;
             document.getElementById('calendlyLink').href = calendlyLink;
-            document.querySelector('.button').style.backgroundColor = buttonBackgroundColor;
-            document.querySelector('.button').style.color = buttonTextColor;
+            document.querySelector('.button').style.backgroundColor = formButtonBackgroundColor;
+            document.querySelector('.button').style.color = formButtonTextColor;
             document.getElementById('form-container-2').style.display = 'block';
         } else {
             document.getElementById('form-container-2').style.display = 'none';
         }
     
-        document.getElementById('form-container-1').style.backgroundColor = formWrapperColor;
+        document.getElementById('form-container-1').style.backgroundColor = formBackgroundColor;
         if (document.getElementById('form-container-2').style.display !== 'none') {
-            document.getElementById('form-container-2').style.backgroundColor = formWrapperColor;
+            document.getElementById('form-container-2').style.backgroundColor = formBackgroundColor;
         }
     
         if (contactEmail && contactEmail.trim() !== '') {
