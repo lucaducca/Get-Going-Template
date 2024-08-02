@@ -44,6 +44,9 @@ const discordLink = 'https://discord.com'
 const headerText = 'Unlimited films, TV programmes and more' // One-line description of what you will offer customers
 const descriptionText = 'Watch anywhere. Cancel at any time.' // More detailed description of what you will offer customers
 
+const headerTextSize = '66' // Default size is 66
+const descriptionTextSize = '42' // Default size is 42
+
 // 5. Update contact email:
 const contactEmail = 'example@notflix.com'
 
