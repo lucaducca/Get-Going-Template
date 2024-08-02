@@ -7,15 +7,10 @@ const emailOctopusScript = '<script async src="https://eocampaign1.com/form/dc18
 const calendlyLink = 'https://calendly.com/joebloggs619/30min'
 
 
-
-
 /*
 Step 8: Adding your logo
 */
 const logoFileName = 'logo.png'
-
-
-
 
 
 /*
@@ -54,7 +49,6 @@ const contactEmail = 'example@notflix.com'
 
 
 
-
 // LOW PRIORITY CHANGES
 // Branding: Update with different background and text colors if needed
 const pageBackgroundColor = '#FFFFFF'
@@ -69,7 +63,6 @@ const waitlistCallToAction = 'Join the wait-list'
 // Calendly: Update the calls to action with your own
 const meetingCallToAction = 'Talk to us'
 const meetingButtonText = 'Schedule a meeting'
-
 
 
 
