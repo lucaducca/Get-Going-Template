@@ -70,8 +70,9 @@ const meetingButtonText = 'Schedule a meeting'
 
 
 // LOWEST PRIORITY CHANGES (For special cases)
-// Forms: Change from white if it does not fit with your new background color
+// Forms: Change if it does not fit with your new background color
 const formBackgroundColor = '#FFFFFF'
+const formBorderColor = '#CCC'
 
 // Social media: Change the colors if they do not fit with your new background color
 const facebookLogoColor = '#4267B2'

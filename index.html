@@ -107,7 +107,7 @@
         }
 
         #form-container-1, #form-container-2 {
-            border: 1px solid #ccc;
+            border: 1px solid #CCC;
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
@@ -406,8 +406,11 @@
         }
     
         document.getElementById('form-container-1').style.backgroundColor = formBackgroundColor;
+        document.getElementById('form-container-1').style.borderColor = formBorderColor;
+
         if (document.getElementById('form-container-2').style.display !== 'none') {
             document.getElementById('form-container-2').style.backgroundColor = formBackgroundColor;
+            document.getElementById('form-container-2').style.borderColor = formBorderColor;
         }
     
         if (contactEmail && contactEmail.trim() !== '') {
