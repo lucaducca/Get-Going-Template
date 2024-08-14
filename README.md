@@ -7,7 +7,9 @@
 
 Welcome to Get Going, the free website template and guide!
 
-The template is designed to help non-technical pre-product startup founders and hobbyists, like you, create a website quickly, easily and importantly, for free!
+I built this template to help non-technical pre-product startup founders and hobbyists, like you, create a website quickly, easily and importantly, for free!
+
+(I got the idea after spending a whole day setting up a landing page of my own using a no code website builder.)
 
 I hope you find it useful!
 
