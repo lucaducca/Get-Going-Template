@@ -1,9 +1,9 @@
 # Get Going Website Template
 ### Quick links
-- [Template setup guide](https://getgoingtemplate.com/instructions/instructions.html)
+- [Get Going homepage](https://lucaducca.github.io/jgg-main-page/)
+- [Template setup guide](https://lucaducca.github.io/jgg-main-page/instructions/instructions.html)
 - [Product demo video](https://www.youtube.com/watch?v=3cnazoqF0mQ)
-- [Live template example to play with](https://getgoingtemplate.com/live-example/index.html)
-- [Get Going homepage](https://getgoingtemplate.com/)
+- [Live template example to play with](https://lucaducca.github.io/jgg-main-page/live-example/index.html)
 
 Welcome to Get Going, the free website template and guide!
 
@@ -13,6 +13,6 @@ I built this template to help non-technical pre-product startup founders and hob
 
 I hope you find it useful!
 
-The instructions for how to use the template can be found [here](https://getgoingtemplate.com/instructions/instructions.html).
+The instructions for how to use the template can be found [here](https://lucaducca.github.io/jgg-main-page/instructions/instructions.html).
 
 You can follow me on X: @lucaducca
